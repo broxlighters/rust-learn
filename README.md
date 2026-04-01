@@ -255,22 +255,25 @@
 learn-rust/
 ├── src/
 │   ├── main.rs
-│   └── bin/
-│       ├── stage01_01_variables/
-│       │   └── main.rs
-│       └── stage01_02_functions/
-│           └── main.rs
+│   ├── stage01/
+│   │   ├── 01_variables.rs
+│   │   └── 02_functions.rs
+│   └── stage02/
+│       └── 01_ownership.rs
 ├── examples/
 ├── notes/
+├── learning/
+├── Cargo.toml
 └── README.md
 ```
 
 建议约定：
 
 - `src/main.rs`：默认实验入口，适合临时草稿
-- `src/bin/`：分阶段练习和小项目入口
-- `src/bin/stage01_01_variables/main.rs`：第 1 阶段第 1 个练习
-- 命名统一为 `stage{阶段号}_{顺序号}_{主题}/main.rs`
+- `src/stage01/01_variables.rs`：第 1 阶段第 1 个练习
+- `src/stage02/01_ownership.rs`：第 2 阶段第 1 个练习
+- 命名统一为 `src/stage{阶段号}/{顺序号}_{主题}.rs`
+- `Cargo.toml`：用 `[[bin]]` 显式声明这些练习入口
 - `examples/`：零散语法实验
 - `notes/`：学习笔记和踩坑记录
 

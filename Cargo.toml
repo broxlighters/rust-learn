@@ -5,3 +5,23 @@ edition = "2021"
 
 [dependencies]
 rand = "0.9.0"
+
+[[bin]]
+name = "stage01_01_variables"
+path = "src/stage01/01_variables.rs"
+
+[[bin]]
+name = "stage01_02_functions"
+path = "src/stage01/02_functions.rs"
+
+[[bin]]
+name = "stage01_03_control_flow"
+path = "src/stage01/03_control_flow.rs"
+
+[[bin]]
+name = "stage01_04_struct_enum"
+path = "src/stage01/04_struct_enum.rs"
+
+[[bin]]
+name = "stage01_05_option_result"
+path = "src/stage01/05_option_result.rs"

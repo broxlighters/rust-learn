@@ -36,19 +36,19 @@
 - `notes-template.md`：每天记录学习笔记
 - `projects/`：3 个阶段小项目题
 
-配套的可运行代码在仓库的 `src/bin/` 下：
+配套的可运行代码在仓库的 `src/stage01/` 下：
 
-- `stage01_01_variables/main.rs`
-- `stage01_02_functions/main.rs`
-- `stage01_03_control_flow/main.rs`
-- `stage01_04_struct_enum/main.rs`
-- `stage01_05_option_result/main.rs`
+- `src/stage01/01_variables.rs`
+- `src/stage01/02_functions.rs`
+- `src/stage01/03_control_flow.rs`
+- `src/stage01/04_struct_enum.rs`
+- `src/stage01/05_option_result.rs`
 
 命名规则统一为：
 
-- `stage{阶段号}_{顺序号}_{主题}/main.rs`
-- 例如：`stage02_01_ownership/main.rs`
-- 这样后续新增阶段时不需要改 Cargo 配置
+- `src/stage{阶段号}/{顺序号}_{主题}.rs`
+- 例如：`src/stage02/01_ownership.rs`
+- 每新增一个练习，同时在 `Cargo.toml` 增加一个 `[[bin]]`
 
 ## 如何使用
 
