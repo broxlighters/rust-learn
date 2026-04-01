@@ -12,10 +12,10 @@ fn main() {
     print_score("95");
     print_score("abc");
 
-    println!("Try:");
-    println!("1. Add one more student to find_student.");
-    println!("2. Use match instead of unwrap_or.");
-    println!("3. Reject scores greater than 100.");
+    println!("试一试：");
+    println!("1. 在 find_student 中再添加一个学生。");
+    println!("2. 用 match 替代 unwrap_or。");
+    println!("3. 拒绝大于 100 的分数。");
 }
 
 fn find_student(id: u32) -> Option<&'static str> {

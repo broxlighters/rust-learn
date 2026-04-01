@@ -30,10 +30,10 @@ fn main() {
         println!("light = {:?}, action = {}", light, describe_light(light));
     }
 
-    println!("Try:");
-    println!("1. Add an author field to Book.");
-    println!("2. Add another enum variant and handle it in match.");
-    println!("3. Create a second Book and compare their status.");
+    println!("试一试：");
+    println!("1. 给 Book 添加一个 author 字段。");
+    println!("2. 再添加一个枚举变体，并在 match 中处理它。");
+    println!("3. 创建第二本 Book，并比较它们的状态。");
 }
 
 fn book_status(book: &Book) -> &'static str {
