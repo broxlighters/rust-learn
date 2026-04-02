@@ -5,9 +5,14 @@ fn main() {
 
     let known_student = find_student(2);
     let missing_student = find_student(99);
+    // let error_student = find_student(101);
 
-    println!("student #2 = {}", known_student.unwrap_or("unknown"));
+    println!("student #2 = {}", match known_student {
+        Some(name) => name,
+        None => "unknown",
+    });
     println!("student #99 = {}", missing_student.unwrap_or("unknown"));
+    // println!("student #0 = {}", error_student.unwrap_or("unknown"));
 
     print_score("95");
     print_score("abc");
@@ -20,10 +25,13 @@ fn main() {
 
 fn find_student(id: u32) -> Option<&'static str> {
     match id {
+        _ if id > 100 => panic!("score is too high"),
         1 => Some("Alice"),
         2 => Some("Bob"),
         3 => Some("Carol"),
-        _ => None,
+        4 => Some("Dave"),
+        5 => Some("Edward"),
+        _ => Some("unknown"),
     }
 }
 
