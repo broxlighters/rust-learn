@@ -1,8 +1,19 @@
 #[derive(Debug)]
 struct Book {
     title: String,
+    author: String,
     pages: u32,
     finished: bool,
+}
+
+impl Book {
+    fn get_status(&self) -> &'static str {
+        if self.finished {
+            "finished"
+        } else {
+            "reading"
+        }
+    }
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -10,6 +21,7 @@ enum TrafficLight {
     Red,
     Yellow,
     Green,
+    Blue
 }
 
 fn main() {
@@ -17,16 +29,29 @@ fn main() {
 
     let rust_book = Book {
         title: String::from("The Rust Book"),
+        author: String::from("The Rust author"),
         pages: 560,
         finished: false,
     };
 
+    let rust_book_2 = Book {
+        title: String::from("The Rust Book"),
+        author: String::from("The Rust author"),
+        pages: 560,
+        finished: true,
+    };
+
+    // {:?} 是调试格式化（debug formatting）的占位符，用于打印实现了 Debug trait 的类型
     println!("book = {:?}", rust_book);
     println!("title = {}", rust_book.title);
+    println!("author = {}", rust_book.author);
     println!("status = {}", book_status(&rust_book));
     println!("pages = {}", rust_book.pages);
 
-    for light in [TrafficLight::Red, TrafficLight::Yellow, TrafficLight::Green] {
+    println!("book_1's status = {:?}", rust_book.get_status());
+    println!("book_2's status = {:?}", rust_book_2.get_status());
+
+    for light in [TrafficLight::Red, TrafficLight::Yellow, TrafficLight::Green, TrafficLight::Blue] {
         println!("light = {:?}, action = {}", light, describe_light(light));
     }
 
@@ -49,5 +74,6 @@ fn describe_light(light: TrafficLight) -> &'static str {
         TrafficLight::Red => "stop",
         TrafficLight::Yellow => "slow down",
         TrafficLight::Green => "go",
+        TrafficLight::Blue => "unknown",
     }
 }
