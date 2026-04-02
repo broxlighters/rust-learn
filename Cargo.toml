@@ -33,3 +33,7 @@ path = "src/stage01/temperature_converter.rs"
 [[bin]]
 name = "fibonacci"
 path = "src/stage01/fibonacci.rs"
+
+[[bin]]
+name = "calculator"
+path = "src/stage01/calculator.rs"
