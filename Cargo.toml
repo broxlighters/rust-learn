@@ -25,3 +25,7 @@ path = "src/stage01/04_struct_enum.rs"
 [[bin]]
 name = "stage01_05_option_result"
 path = "src/stage01/05_option_result.rs"
+
+[[bin]]
+name = "temperature_converter"
+path = "src/stage01/temperature_converter.rs"
