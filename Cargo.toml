@@ -29,3 +29,7 @@ path = "src/stage01/05_option_result.rs"
 [[bin]]
 name = "temperature_converter"
 path = "src/stage01/temperature_converter.rs"
+
+[[bin]]
+name = "fibonacci"
+path = "src/stage01/fibonacci.rs"
