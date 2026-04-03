@@ -37,3 +37,23 @@ path = "src/stage01/fibonacci.rs"
 [[bin]]
 name = "calculator"
 path = "src/stage01/calculator.rs"
+
+[[bin]]
+name = "stage02_01_ownership"
+path = "src/stage02/01_ownership.rs"
+
+[[bin]]
+name = "stage02_02_borrowing"
+path = "src/stage02/02_borrowing.rs"
+
+[[bin]]
+name = "stage02_03_references_and_mut"
+path = "src/stage02/03_references_and_mut.rs"
+
+[[bin]]
+name = "stage02_04_slice"
+path = "src/stage02/04_slice.rs"
+
+[[bin]]
+name = "stage02_guess_number_plus"
+path = "src/stage02/guess_number_plus.rs"
