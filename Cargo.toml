@@ -57,3 +57,27 @@ path = "src/stage02/04_slice.rs"
 [[bin]]
 name = "stage02_guess_number_plus"
 path = "src/stage02/guess_number_plus.rs"
+
+[[bin]]
+name = "stage03_01_vec"
+path = "src/stage03/01_vec.rs"
+
+[[bin]]
+name = "stage03_02_hashmap"
+path = "src/stage03/02_hashmap.rs"
+
+[[bin]]
+name = "stage03_03_modules"
+path = "src/stage03/03_modules.rs"
+
+[[bin]]
+name = "stage03_04_result_and_question"
+path = "src/stage03/04_result_and_question.rs"
+
+[[bin]]
+name = "stage03_todo_cli"
+path = "src/stage03/todo_cli.rs"
+
+[[bin]]
+name = "stage03_todo_list_cli"
+path = "src/stage03/todo_list_cli.rs"
