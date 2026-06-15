@@ -81,3 +81,23 @@ path = "src/stage03/todo_cli.rs"
 [[bin]]
 name = "stage03_todo_list_cli"
 path = "src/stage03/todo_list_cli.rs"
+
+[[bin]]
+name = "stage04_01_generics"
+path = "src/stage04/01_generics.rs"
+
+[[bin]]
+name = "stage04_02_traits"
+path = "src/stage04/02_traits.rs"
+
+[[bin]]
+name = "stage04_03_lifetimes"
+path = "src/stage04/03_lifetimes.rs"
+
+[[bin]]
+name = "stage04_04_iterators"
+path = "src/stage04/04_iterators.rs"
+
+[[bin]]
+name = "stage04_mini_grep"
+path = "src/stage04/mini_grep.rs"
